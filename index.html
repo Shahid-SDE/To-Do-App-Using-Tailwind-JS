@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body class="m-0 p-0 font-sans box-border">
+    <div
+      class="cont w-[100%] min-h-[100vh] bg-[linear-gradient(135deg,#153677,#4e085f)] p-[10px]"
+    >
+      <div
+        class="todo-app w-full max-w-[540px] rounded-[10px] bg-[#fff] mt-[100px] mx-auto mb-[20px] pt-[40px] px-[30px] pb-[70px]"
+      >
+        <h2
+          class="text-blacg text-3xl font-bold flex text-[#002765] items-center mb-[20px]"
+        >
+          To-Do List <img class="w-[30px] ml-[10px]" src="icon.png" alt="" />
+        </h2>
+
+        <div
+          class="row flex items-center justify-between bg-[#edeef0] rounded-[30px] pl-[20px] mb-[25px]"
+        >
+          <input
+            class="flex-1 border-0 outline-none bg-transparent p-[10px]"
+            type="text"
+            id="input-box"
+            placeholder="Add your text"
+          />
+          <button
+            class="bg-[#ff5945] rounded-[40px] cursor-pointer border-0 outline-none py-[16px] px-[50px] text-[#fff]"
+            onclick="addTask()"
+          >
+            Add
+          </button>
+        </div>
+
+        <ul id="list-container"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
